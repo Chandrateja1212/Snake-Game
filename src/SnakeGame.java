@@ -101,11 +101,11 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
         // if the game is not over
         if (!gameOver) {
             // Food
-            g.setColor(Color.red);
+            g.setColor(Color.blue);
             g.fill3DRect(food.x * tileSize, food.y * tileSize, tileSize, tileSize, true);
 
             // Snake Head
-            g.setColor(Color.green);
+            g.setColor(Color.white);
             g.fill3DRect(snakeHead.x * tileSize, snakeHead.y * tileSize, tileSize, tileSize, true);
 
             // Snake Body
@@ -115,7 +115,7 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
 
             // Score
             g.setFont(new Font("Arial", Font.PLAIN, 16));
-            g.setColor(Color.white);
+            g.setColor(Color.green);
             g.drawString("Score: " + snakeBody.size(), tileSize - 16, tileSize);
         } else {
             // Blur effect
